@@ -34,7 +34,7 @@
 			input[type="text"],
 			input[type="email"],
 			input[type="tel"] {
-				width: 90%;
+				width: 100%;
 				padding: 10px;
 				margin-bottom: 30px;
 				border: 1px solid #ccc;
@@ -101,7 +101,7 @@
 		</select>
     
     <label for="first_name" style="font-size: 14px; font-weight: medium;">First Name</label>
-		<input type="text" id="first_name" name="first_name" required>
+		<input type="text" id="first_name" name="first_name" style="box-sizing: border-box; width: 100%;" required>
 
 		<label for="last_name" style="font-size: 14px; font-weight: medium;">Last Name</label>
 		<input type="text" id="last_name" name="last_name" required>
@@ -120,10 +120,10 @@
     
     <label for="work_type" style="font-size: 14px; font-weight: medium;">Type of work interested in</label>
 		<select id="work_type" name="work_type" required style="width: 100%; padding: 10px; margin-bottom: 30px; border: 1px solid #ccc; font-size: 15px;">
-  		<option value="" disabled selected></option>
-  		<option value="Permanent">Permanent</option>
-      <option value="Temporary">Temporary</option>
-      <option value="Both">Both</option>
+			<option value="" disabled selected></option>
+			<option value="Permanent">Permanent</option>
+		      <option value="Temporary">Temporary</option>
+		      <option value="Both">Both</option>
 		</select>
     
     <label for="temp_work" style="font-size: 14px; font-weight: medium;">Register for Temp work?</label>
