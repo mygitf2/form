@@ -41,10 +41,6 @@
 				font-size: 15px;
 			}
 
-			input[type="radio"] {
-				margin-right: 10px;
-			}
-
 			textarea {
 				width: 100%;
 				height: 200px;
@@ -53,10 +49,6 @@
 				border: 1px solid #ccc;
 				border-radius: 5px;
 				font-size: 15px;
-			}
-
-			input[type="file"] {
-				margin-bottom: 20px;
 			}
 
 	    .radio-container {
@@ -196,35 +188,25 @@
     
     <label for="position2" style="font-size: 14px; font-weight: medium;">Preferred Position (2nd choice)</label>
 		<input type="text" id="position2" name="position2" required>
-
-
-
-
-
-
-		<label style="font-size: 14px; font-weight: medium;">Work Eligibility *</label>
-<div style="display: flex; align-items: center; padding-bottom: 30px;">
-	<div style="display: flex; align-items: center; margin-right: 20px;">
-		<input type="radio" id="eligible" name="work_eligibility" value="I confirm I am eligible to live and work in UK" required style="margin: 0;">
-		<label for="eligible" style="margin-left: 5px; font-weight: normal; margin-bottom: 0;">I confirm I am eligible to live and work in UK</label>
-	</div>
-	<div style="display: flex; align-items: center;">
-		<input type="radio" id="not_eligible" name="work_eligibility" value="I confirm I am not eligible to live and work in UK" required style="margin: 0;">
-		<label for="not_eligible" style="margin-left: 5px; font-weight: normal; margin-bottom: 0;">I confirm I am not eligible to live and work in UK</label>
-	</div>
+    
+    
+    <div style="padding-top: 10px; width: 100%; height: 100px; overflow-y: scroll; border: 1px solid #ccc;">
+  <label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;">
+    <input type="checkbox" id="after" name="after" value="AFTER" style="margin-right: 5px;">
+    Afternoons
+  </label>
+  <label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;">
+    <input type="checkbox" id="morning" name="morning" value="MORNING" style="margin-right: 5px;">
+    Mornings
+  </label>
+  <label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;">
+    <input type="checkbox" id="evening" name="evening" value="EVENING" style="margin-right: 5px;">
+    Evenings
+  </label>
 </div>
 
 
 
-	<label for="cover_letter" style="font-size: 14px; font-weight: normal;">Your covering message for this job *</label>
-	<textarea id="cover_letter" name="cover_letter" required></textarea>
-
-	<label for="recent_job" style="font-size: 14px; font-weight: medium;">What is your current or most recent job title? *</label>
-	<input type="text" id="recent_job" name="recent_job" required>
-
-	<label for="cv" style="font-size: 14px; font-weight: medium;">Attach your CV here (PDF or WORD DOCUMENTS ARE ACCEPTED) *</label>
-	<input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-	<div class="error"></div>
 
 
 <button type="submit" class="button" onclick="showPleaseWait()">Send Application</button>
