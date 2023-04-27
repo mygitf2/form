@@ -93,11 +93,11 @@
 		<select id="title" name="title" required style="width: 92.2%; padding: 10px; margin-bottom: 30px; border: 1px solid #ccc; font-size: 15px;">
   		<option value="" disabled selected></option>
   		<option value="Ms">Ms</option>
-      <option value="Miss">Miss</option>
-      <option value="Mr">Mr</option>
-      <option value="Mrs">Mrs</option>
-      <option value="DR">DR</option>
-      <option value="Prefer not to say">Prefer not to say</option>
+		<option value="Miss">Miss</option>
+		<option value="Mr">Mr</option>
+		<option value="Mrs">Mrs</option>
+		<option value="DR">DR</option>
+		<option value="Prefer not to say">Prefer not to say</option>
 		</select>
     
     <label for="first_name" style="font-size: 14px; font-weight: medium;">First Name</label>
@@ -447,7 +447,171 @@
 
 
 
+<label for="sec_skills" style="font-size: 14px; font-weight: medium;">Secretarial Skills</label>
+<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+  <select id="audio_skills" name="audio_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	<option value="AUDIO">Audio</option>
+  </select>
+  <select id="audio_lvl" name="audio_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	<option value="" disabled selected></option>
+	<option value="0">< 30 WPM</option>
+	<option value="1">30 - 45 WPM</option>
+	<option value="2">45 - 55 WPM</option>
+	<option value="3">55 - 80 WPM</option>
+	<option value="4">80 - 100 WPM</option>
+	<option value="5">100 - 120 WPM</option>
+	<option value="6">Not tested</option>
+  </select>
+</div>
+
+<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+	<select id="shorthand_skills" name="shorthand_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value="SHORTHAN">Shorthand</option>
+	</select>
+	<select id="shorthand_lvl" name="shorthand_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value="" disabled selected></option>
+	  <option value="0">< 30 WPM</option>
+	  <option value="1">30 - 45 WPM</option>
+	  <option value="2">45 - 55 WPM</option>
+	  <option value="3">55 - 80 WPM</option>
+	  <option value="4">80 - 100 WPM</option>
+	  <option value="5">100 - 120 WPM</option>
+	  <option value="6">Not tested</option>
+	</select>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+	<select id="speed_skills" name="speed_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value="SPEED">Speed Writing</option>
+	</select>
+	<select id="speed_lvl" name="speed_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value="" disabled selected></option>
+	  <option value="0">< 30 WPM</option>
+	  <option value="1">30 - 45 WPM</option>
+	  <option value="2">45 - 55 WPM</option>
+	  <option value="3">55 - 80 WPM</option>
+	  <option value="4">80 - 100 WPM</option>
+	  <option value="5">100 - 120 WPM</option>
+	  <option value="6">Not tested</option>
+	</select>
+  </div>
+
+
+  <label for="software" style="font-size: 14px; font-weight: medium;">Software skills</label>
+	<div id="software-fields">
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software1" name="software1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected>select at least one</option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level1" name="level1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
+	</div>
+	<div id="software_fields"></div>
+	<button type="button" onclick="addSoftwareField()" style="margin-bottom: 30px;">Add Another Software Field</button>
+
+	<script>
+	let softwareCount = 1;
+
+	function addSoftwareField() {
+		softwareCount++;
+		let newSoftwareField = document.createElement('div');
+		newSoftwareField.style.display = 'flex';
+		newSoftwareField.style.justifyContent = 'space-between';
+		newSoftwareField.style.width = '92.2%';
+		newSoftwareField.style.marginBottom = '30px';
+
+		let softwareSelect = document.createElement('select');
+		softwareSelect.id = 'software' + softwareCount;
+		softwareSelect.name = 'software' + softwareCount;
+		softwareSelect.style.width = '45%';
+		softwareSelect.style.padding = '10px';
+		softwareSelect.style.border = '1px solid #ccc';
+		softwareSelect.style.fontSize = '15px';
+		let softwareOptions = ['MS Word', 'MS Powerpoint', 'MS Excel', 'MS Outlook', 'MS Project', 'MS Access', 'SAGE Line 50', 'Xero', 'G-Suite', 'Bloomberg', 'Customer Relationship Manager', 'Filefinder', 'Front Page', 'Google Suite', 'Illustrator', 'Indesign', 'In-house Database', 'Internet Explorer', 'Lotus Notes', 'Mac', 'Photoshop', 'Quark', 'Reapit', 'Reuters', 'Salesforce', 'SAP', 'Word Perfect', 'OTHER software not listed'];
+		for (let i = 0; i < softwareOptions.length; i++) {
+		let option = document.createElement('option');
+		option.value = softwareOptions[i];
+		option.textContent = softwareOptions[i];
+		softwareSelect.appendChild(option);
+		}
+
+		let levelSelect = document.createElement('select');
+		levelSelect.id = 'level' + softwareCount;
+		levelSelect.name = 'level' + softwareCount;
+		levelSelect.required = true;
+		levelSelect.style.width = '45%';
+		levelSelect.style.padding = '10px';
+		levelSelect.style.border = '1px solid #ccc';
+		levelSelect.style.fontSize = '15px';
+		let levelOptions = ['Basic', 'Average', 'Intermediate', 'Advanced'];
+		let defaultOption = document.createElement('option');
+		defaultOption.value = '';
+		defaultOption.disabled = true;
+		defaultOption.selected = true;
+		levelSelect.appendChild(defaultOption);
+		for (let i = 0; i < levelOptions.length; i++) {
+		let option = document.createElement('option');
+		option.value = i;
+		option.textContent = levelOptions[i];
+		levelSelect.appendChild(option);
+		}
+
+		newSoftwareField.appendChild(softwareSelect);
+		newSoftwareField.appendChild(levelSelect);
+		document.getElementById('software_fields').appendChild(newSoftwareField);
+	}
+</script>
+
+
+<label for="driving" style="font-size: 14px; font-weight: medium;">Clean Driving Licence</label>
+	<input type="checkbox" id="driving" name="driving" value="DLYES" style="margin-bottom: 30px;"> Yes
+
+<label for="owncar" style="font-size: 14px; font-weight: medium;">Do you own a car?</label>
+	<input type="checkbox" id="owncar" name="owncar" value="OVYES" style="margin-bottom: 30px;"> Yes
+
+<label for="owncar" style="font-size: 14px; font-weight: medium;">Do you have criminal records?</label>
+	<input type="checkbox" id="owncar" name="owncar" value="CRB" style="margin-bottom: 30px;"> No
+
+
+		  
+
+<div>
 <button type="submit" class="button" onclick="showPleaseWait()">Send Application</button>
+</div>
 
 <script>
 function showPleaseWait() {
