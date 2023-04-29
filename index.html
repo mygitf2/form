@@ -519,34 +519,34 @@
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 		<select id="software1" name="software1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 			<option value="" disabled selected>select at least one</option>
-			<option value="MS Word">MS Word</option>
-			<option value="MS Powerpoint">MS Powerpoint</option>
-			<option value="MS Excel">MS Excel</option>
-			<option value="MS Outlook">MS Outlook</option>
-			<option value="MS Project">MS Project</option>
-			<option value="MS Access">MS Access</option>
-			<option value="SAGE Line 50">SAGE Line 50</option>
-			<option value="Xero">Xero</option>
-			<option value="G-Suite">G-Suite</option>
-			<option value="Bloomberg">Bloomberg</option>
-			<option value="Customer Relationship Manager">Customer Relationship Manager</option>
-			<option value="Filefinder">Filefinder</option>
-			<option value="Front Page">Front Page</option>
-			<option value="Google Suite">Google Suite</option>
-			<option value="Illustrator">Illustrator</option>
-			<option value="Indesign">Indesign</option>
-			<option value="In-house Database">In-house Database</option>
-			<option value="Internet Explorer">Internet Explorer</option>
-			<option value="Lotus Notes">Lotus Notes</option>
-			<option value="Mac">Mac</option>
-			<option value="Photoshop">Photoshop</option>
-			<option value="Quark">Quark</option>
-			<option value="Reapit">Reapit</option>
-			<option value="Reuters">Reuters</option>
-			<option value="Salesforce">Salesforce</option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
 			<option value="SAP">SAP</option>
-			<option value="Word Perfect">Word Perfect</option>
-			<option value="OTHER software not listed">OTHER software not listed</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
 		</select>
 		<select id="level1" name="level1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 			<option value="" disabled selected></option>
@@ -557,61 +557,218 @@
 		</select>
 	</div>
 	</div>
-	<div id="software_fields"></div>
-	<button type="button" onclick="addSoftwareField()" style="margin-bottom: 30px;">Add Another Software Field</button>
 
-	<script>
-	let softwareCount = 1;
+	 <label for="software" style="font-size: 14px; font-weight: medium;">Software skills</label>
+	<div id="software-fields">
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software1" name="software1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected>select at least one</option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level1" name="level1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
 
-	function addSoftwareField() {
-		softwareCount++;
-		let newSoftwareField = document.createElement('div');
-		newSoftwareField.style.display = 'flex';
-		newSoftwareField.style.justifyContent = 'space-between';
-		newSoftwareField.style.width = '92.2%';
-		newSoftwareField.style.marginBottom = '30px';
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software2" name="software2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level2" name="level2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
 
-		let softwareSelect = document.createElement('select');
-		softwareSelect.id = 'software' + softwareCount;
-		softwareSelect.name = 'software' + softwareCount;
-		softwareSelect.style.width = '45%';
-		softwareSelect.style.padding = '10px';
-		softwareSelect.style.border = '1px solid #ccc';
-		softwareSelect.style.fontSize = '15px';
-		let softwareOptions = ['', 'MS Word', 'MS Powerpoint', 'MS Excel', 'MS Outlook', 'MS Project', 'MS Access', 'SAGE Line 50', 'Xero', 'G-Suite', 'Bloomberg', 'Customer Relationship Manager', 'Filefinder', 'Front Page', 'Google Suite', 'Illustrator', 'Indesign', 'In-house Database', 'Internet Explorer', 'Lotus Notes', 'Mac', 'Photoshop', 'Quark', 'Reapit', 'Reuters', 'Salesforce', 'SAP', 'Word Perfect', 'OTHER software not listed'];
-		for (let i = 0; i < softwareOptions.length; i++) {
-		let option = document.createElement('option');
-		option.value = softwareOptions[i];
-		option.textContent = softwareOptions[i];
-		softwareSelect.appendChild(option);
-		}
 
-		let levelSelect = document.createElement('select');
-		levelSelect.id = 'level' + softwareCount;
-		levelSelect.name = 'level' + softwareCount;
-		levelSelect.required = true;
-		levelSelect.style.width = '45%';
-		levelSelect.style.padding = '10px';
-		levelSelect.style.border = '1px solid #ccc';
-		levelSelect.style.fontSize = '15px';
-		let levelOptions = ['Basic', 'Average', 'Intermediate', 'Advanced'];
-		let defaultOption = document.createElement('option');
-		defaultOption.value = '';
-		defaultOption.disabled = true;
-		defaultOption.selected = true;
-		levelSelect.appendChild(defaultOption);
-		for (let i = 0; i < levelOptions.length; i++) {
-		let option = document.createElement('option');
-		option.value = i;
-		option.textContent = levelOptions[i];
-		levelSelect.appendChild(option);
-		}
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software3" name="software3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level3" name="level3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
 
-		newSoftwareField.appendChild(softwareSelect);
-		newSoftwareField.appendChild(levelSelect);
-		document.getElementById('software_fields').appendChild(newSoftwareField);
-	}
-</script>
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software4" name="software4" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level4" name="level4" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
+
+	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
+		<select id="software5" name="software5" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="WORD">MS Word</option>
+			<option value="PWP">MS Powerpoint</option>
+			<option value="EXCEL">MS Excel</option>
+			<option value="OUT">MS Outlook</option>
+			<option value="MSPROJ">MS Project</option>
+			<option value="MSACC">MS Access</option>
+			<option value="SAGE">SAGE Line 50</option>
+			<option value="XERO">Xero</option>
+			<option value="GSUITE">G-Suite</option>
+			<option value="BLOOM">Bloomberg</option>
+			<option value="CRM">Customer Relationship Manager</option>
+			<option value="FILEFIND">Filefinder</option>
+			<option value="FRO">Front Page</option>
+			<option value="GOO">Google Suite</option>
+			<option value="ILLUSTRA">Illustrator</option>
+			<option value="INDESIGN">Indesign</option>
+			<option value="INHOUSE">In-house Database</option>
+			<option value="INTEXE">Internet Explorer</option>
+			<option value="LOT">Lotus Notes</option>
+			<option value="MAC">Mac</option>
+			<option value="PHO">Photoshop</option>
+			<option value="QUA">Quark</option>
+			<option value="REAP">Reapit</option>
+			<option value="REUT">Reuters</option>
+			<option value="SALES">Salesforce</option>
+			<option value="SAP">SAP</option>
+			<option value="WORDPERF">Word Perfect</option>
+			<option value="OTHER">OTHER software not listed</option>
+		</select>
+		<select id="level5" name="level5" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value="" disabled selected></option>
+			<option value="0">Basic</option>
+			<option value="1">Average</option>
+			<option value="2">Intermediate</option>
+			<option value="3">Advanced</option>
+		</select>
+	</div>
+
+
+
+	</div>
 
 
 <label for="driving" style="font-size: 14px; font-weight: medium;">Clean Driving Licence</label>
