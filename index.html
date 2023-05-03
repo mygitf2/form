@@ -143,7 +143,7 @@
 
 
 		<label for="min_an" style="font-size: 14px; font-weight: medium;">Minimum Annual Salary Required (you will not be sent any roles below this amount)</label>
-		<input type="text" id="min_an" name="min_an" required>
+		<input type="text" id="min_an" name="min_an" required pattern="[0-9]+">
     
     
     <label for="min_temp" style="font-size: 14px; font-weight: medium;">Minimum Temp Rate Required (you will not be sent any roles below this amount)</label>
@@ -356,8 +356,8 @@
 
 <label for="languages" style="font-size: 14px; font-weight: medium;">Languages (up to 3)</label>
 <div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
-  <select id="language1" name="language1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	<option value="" disabled selected>Required</option>
+  <select id="language1" name="language1" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	<option value=""></option>
 	<option value="ARABIC">Arabic</option>
 	<option value="CHI">Chinese</option>
 	<option value="CZE">Czech</option>
@@ -379,8 +379,8 @@
 	<option value="SWEDISH">Swedish</option>
 	<option value="TURKISH">Turkish</option>
   </select>
-  <select id="lang_level1" name="lang_level1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	<option value="" disabled selected></option>
+  <select id="lang_level1" name="lang_level1" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	<option value=""></option>
 	<option value="0">Basic</option>
 	<option value="1">Moderate</option>
 	<option value="2">Good</option>
@@ -391,7 +391,7 @@
 
 <div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 	<select id="language2" name="language2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	  <option value=""></option>
 	  <option value="ARABIC">Arabic</option>
 	  <option value="CHI">Chinese</option>
 	  <option value="CZE">Czech</option>
@@ -414,7 +414,7 @@
 	  <option value="TURKISH">Turkish</option>
 	</select>
 	<select id="lang_level2" name="lang_level2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	  <option value=""></option>
 	  <option value="0">Basic</option>
 	  <option value="1">Moderate</option>
 	  <option value="2">Good</option>
@@ -425,7 +425,7 @@
 
   <div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 	<select id="language3" name="language3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	  <option value=""></option>
 	  <option value="ARABIC">Arabic</option>
 	  <option value="CHI">Chinese</option>
 	  <option value="CZE">Czech</option>
@@ -448,7 +448,7 @@
 	  <option value="TURKISH">Turkish</option>
 	</select>
 	<select id="lang_level3" name="lang_level3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	  <option value=""></option>
 	  <option value="0">Basic</option>
 	  <option value="1">Moderate</option>
 	  <option value="2">Good</option>
@@ -464,8 +464,8 @@
   <select id="audio_skills" name="audio_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 	<option value="AUDIO">Audio</option>
   </select>
-  <select id="audio_lvl" name="audio_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	<option value="" disabled selected></option>
+  <select id="audio_lvl" name="audio_lvl" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	<option value=""></option>
 	<option value="0">< 30 WPM</option>
 	<option value="1">30 - 45 WPM</option>
 	<option value="2">45 - 55 WPM</option>
@@ -480,8 +480,8 @@
 	<select id="shorthand_skills" name="shorthand_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 	  <option value="SHORTHAN">Shorthand</option>
 	</select>
-	<select id="shorthand_lvl" name="shorthand_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	<select id="shorthand_lvl" name="shorthand_lvl" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value=""></option>
 	  <option value="0">< 30 WPM</option>
 	  <option value="1">30 - 45 WPM</option>
 	  <option value="2">45 - 55 WPM</option>
@@ -496,8 +496,8 @@
 	<select id="speed_skills" name="speed_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 	  <option value="SPEED">Speed Writing</option>
 	</select>
-	<select id="speed_lvl" name="speed_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	<select id="speed_lvl" name="speed_lvl" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value=""></option>
 	  <option value="0">< 30 WPM</option>
 	  <option value="1">30 - 45 WPM</option>
 	  <option value="2">45 - 55 WPM</option>
@@ -513,8 +513,8 @@
 	<select id="typing_skills" name="typing_skills" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
 	  <option value="TYPING">Typing</option>
 	</select>
-	<select id="typing_lvl" name="typing_lvl" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-	  <option value="" disabled selected></option>
+	<select id="typing_lvl" name="typing_lvl" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+	  <option value=""></option>
 	  <option value="0">< 30 WPM</option>
 	  <option value="1">30 - 45 WPM</option>
 	  <option value="2">45 - 55 WPM</option>
@@ -530,8 +530,8 @@
 	 <label for="software" style="font-size: 14px; font-weight: medium;">Software skills</label>
 	<div id="software-fields">
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
-		<select id="software1" name="software1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected>select at least one</option>
+		<select id="software1" name="software1" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value=""></option>
 			<option value="WORD">MS Word</option>
 			<option value="PWP">MS Powerpoint</option>
 			<option value="EXCEL">MS Excel</option>
@@ -561,8 +561,8 @@
 			<option value="WORDPERF">Word Perfect</option>
 			<option value="OTHER">OTHER software not listed</option>
 		</select>
-		<select id="level1" name="level1" required style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+		<select id="level1" name="level1" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
+			<option value=""></option>
 			<option value="0">Basic</option>
 			<option value="1">Average</option>
 			<option value="2">Intermediate</option>
@@ -572,7 +572,7 @@
 
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 		<select id="software2" name="software2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="WORD">MS Word</option>
 			<option value="PWP">MS Powerpoint</option>
 			<option value="EXCEL">MS Excel</option>
@@ -603,7 +603,7 @@
 			<option value="OTHER">OTHER software not listed</option>
 		</select>
 		<select id="level2" name="level2" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="0">Basic</option>
 			<option value="1">Average</option>
 			<option value="2">Intermediate</option>
@@ -614,7 +614,7 @@
 
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 		<select id="software3" name="software3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="WORD">MS Word</option>
 			<option value="PWP">MS Powerpoint</option>
 			<option value="EXCEL">MS Excel</option>
@@ -645,7 +645,7 @@
 			<option value="OTHER">OTHER software not listed</option>
 		</select>
 		<select id="level3" name="level3" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="0">Basic</option>
 			<option value="1">Average</option>
 			<option value="2">Intermediate</option>
@@ -655,7 +655,7 @@
 
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 		<select id="software4" name="software4" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="WORD">MS Word</option>
 			<option value="PWP">MS Powerpoint</option>
 			<option value="EXCEL">MS Excel</option>
@@ -686,7 +686,7 @@
 			<option value="OTHER">OTHER software not listed</option>
 		</select>
 		<select id="level4" name="level4" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="0">Basic</option>
 			<option value="1">Average</option>
 			<option value="2">Intermediate</option>
@@ -696,7 +696,7 @@
 
 	<div style="display: flex; justify-content: space-between; width: 92.2%; margin-bottom: 30px;">
 		<select id="software5" name="software5" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="WORD">MS Word</option>
 			<option value="PWP">MS Powerpoint</option>
 			<option value="EXCEL">MS Excel</option>
@@ -727,7 +727,7 @@
 			<option value="OTHER">OTHER software not listed</option>
 		</select>
 		<select id="level5" name="level5" style="width: 45%; padding: 10px; border: 1px solid #ccc; font-size: 15px;">
-			<option value="" disabled selected></option>
+			<option value=""></option>
 			<option value="0">Basic</option>
 			<option value="1">Average</option>
 			<option value="2">Intermediate</option>
