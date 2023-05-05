@@ -202,7 +202,7 @@
 		<input type="text" id="position2" name="position2">
     
     <label for="pref_ind" style="font-size: 14px; font-weight: medium;">Preferred Industry (required)</label>
-    <div style="padding-top: 10px; width: 92.2%; height: 100px; margin-bottom: 30px; overflow-y: scroll; border: 1px solid #ccc; background-color: #fff;">
+    <div class="pref_ind_section" style="padding-top: 10px; width: 92.2%; height: 100px; margin-bottom: 30px; overflow-y: scroll; border: 1px solid #ccc; background-color: #fff;">
 		<label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;"><input type="checkbox" id="select_all" name="select_all" value="ALL" style="margin-right: 5px;"> Select All</label>
 		<label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;"><input type="checkbox" id="acc_pref_ind" name="acc_pref_ind" value="ACC" style="margin-right: 5px;"> Accountancy</label>
 		<label style="font-weight: normal; margin-bottom: 10px; padding-left: 5px;"><input type="checkbox" id="ad_pref_ind" name="ad_pref_ind" value="AD" style="margin-right: 5px;"> Advertising</label>
@@ -250,7 +250,7 @@
 
 <script>
 	document.getElementById("select_all").addEventListener("click", function(){
-	  var checkboxes = document.querySelectorAll('input[type=checkbox]');
+	var checkboxes = document.querySelectorAll('.pref_ind_section input[type=checkbox]');
 	  for (var i = 0; i < checkboxes.length; i++) {
 		checkboxes[i].checked = this.checked;
 	  }
